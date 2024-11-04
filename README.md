@@ -29,24 +29,22 @@ This is a simplified full-stack web application for displaying products, develop
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Abhi19990628/Tech-Wizard-Internship-Assignment.git>
    cd product_display_app
 Create and activate a virtual environment:
 
 bash
 python -m venv my_env
-my_env\Scripts\activate  # For Windows
-# OR
+my_env\Scripts\. activate  # For Windows
+OR
 source my_env/bin/activate  # For macOS/Linux
 Install the dependencies:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Apply migrations:
 
-bash
-Copy code
+
 python manage.py migrate
 Create a superuser (if you want to access the Django admin):
 
@@ -77,24 +75,20 @@ Access the application at http://127.0.0.1:8000/ and the admin panel at http://1
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Copy code
+
 3. Commit and Push to GitHub
 After creating the requirements.txt and README.md, you can commit these changes and push them to your GitHub repository:
 
 Stage the new files for commit:
 
-bash
-Copy code
 git add requirements.txt README.md
 Commit the changes:
 
-bash
-Copy code
+
 git commit -m "Add requirements and README files"
 Push the changes to your GitHub repository:
 
-bash
-Copy code
+
 git push origin main  # or the name of your branch
 4. Additional Notes
 Make sure to replace <repository-url> with the actual URL of your GitHub repository in the README.
