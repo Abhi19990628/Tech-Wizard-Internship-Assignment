@@ -5,7 +5,6 @@ Create a file named README.md in the root directory of your project.
 Open README.md in a text editor and add the following content:
 
 markdown
-Copy code
 # Product Display Web Application
 
 This is a simplified full-stack web application for displaying products, developed using Django and Django REST Framework. It includes features for listing products and viewing product details.
@@ -22,8 +21,7 @@ This is a simplified full-stack web application for displaying products, develop
 
 - Django
 - Django REST Framework
-- MongoDB (or your choice of database)
-- React.js (or your chosen frontend framework)
+- Postgresg - MongoDB (or your choice of database)
 
 ## Setup
 
@@ -31,32 +29,43 @@ This is a simplified full-stack web application for displaying products, develop
    ```bash
    git clone <https://github.com/Abhi19990628/Tech-Wizard-Internship-Assignment.git>
    cd product_display_app
+   ```
+   
 Create and activate a virtual environment:
 
-bash
+#### For Windows
+```bash
 python -m venv my_env
-my_env\Scripts\. activate  # For Windows
-OR
-source my_env/bin/activate  # For macOS/Linux
+my_env\Scripts\. activate
+```
+
+#### For macOS/Linux
+
+```bash
+source my_env/bin/activate  
+```
+
 Install the dependencies:
 
-
+```
 pip install -r requirements.txt
+```
+
 Apply migrations:
 
-
+```
 python manage.py migrate
+```
+
 Create a superuser (if you want to access the Django admin):
 
-bash
+```bash
 python manage.py createsuperuser
 Run the development server:
+```
 
-## Apis
-python manage.py runserver
-
-API Endpoints
-
+## API Endpoints
+```
 GET /api/products/: List all products.
 
 POST /api/products/: Create a new product.
@@ -69,14 +78,19 @@ PATCH /api/products/<id>/: Partially update a specific product by ID.
 
 DELETE /api/products/<id>/: Delete a specific product by ID.
 
-Usage
-Access the application at http://127.0.0.1:8000/ and the admin panel at http://127.0.0.1:8000/admin/.
 
-License
+```
+
+#### Usage
+Access the application at `http://127.0.0.1:8000/` and the admin panel at `http://127.0.0.1:8000/admin/`.
+
+
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-3. Commit and Push to GitHub
+### 3. Commit and Push to GitHub
+```
 After creating the requirements.txt and README.md, you can commit these changes and push them to your GitHub repository:
 
 Stage the new files for commit:
@@ -90,10 +104,14 @@ Push the changes to your GitHub repository:
 
 
 git push origin main  # or the name of your branch
-4. Additional Notes
+````
+### 4. Additional Notes
+
+```
 Make sure to replace <repository-url> with the actual URL of your GitHub repository in the README.
 You can further enhance your README file with images, badges, or more detailed instructions based on your project complexity.
 Let me know if you need further assistance!
+```
 
 
 
