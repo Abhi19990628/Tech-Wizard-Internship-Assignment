@@ -14,6 +14,7 @@ This is a simplified full-stack web application for displaying products, develop
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [API Endpoints](#api-endpoints)
+- [Tests](#tests)
 - [Usage](#usage)
 - [License](#license)
 
@@ -80,7 +81,32 @@ DELETE /api/products/<id>/: Delete a specific product by ID.
 
 
 ```
+#### Tests
+```
+The application includes a suite of tests to verify the functionality of the product API endpoints. The tests are written using pytest and Django's test client.
 
+Running the Tests
+To run the tests, make sure you are in the root directory of the project and have pytest installed. You can then run:
+
+```
+
+``` bash
+pytest
+
+```
+
+
+#### Test Cases Overview
+```
+1. List Products (test_list_products): Verifies that the list of products can be retrieved successfully.
+2. Create Product (test_create_product): Tests the creation of a new product via the API.
+3. Retrieve Product (test_retrieve_product): Ensures that a specific product can be retrieved by its ID.
+4. Update Product (test_update_product): Tests the update functionality for a product.
+5. Delete Product (test_delete_product): Verifies that a product can be deleted successfully.
+Each test checks the status code and relevant data to ensure that the endpoints behave as expected
+
+
+```
 #### Usage
 Access the application at `http://127.0.0.1:8000/` and the admin panel at `http://127.0.0.1:8000/admin/`.
 
